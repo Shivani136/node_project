@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "b81a32fe-2a78-4e7d-b79c-4158235a2f2e",
+		"name": "demo api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15652625"
+	},
+	"item": [
+		{
+			"name": "user create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"ankita\",\n    \"email\":\"ankita@gmail.com\",\n    \"age\":23,\n    \"place\":\"ujjain\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show all user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"mahi\",\n    \"place\":\"ukk\",\n    \"email\":\"example@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/update/62a6dcaae164afdc20675d05",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"update",
+						"62a6dcaae164afdc20675d05"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "del user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/delete/62a6dc217bd8e6dbc902f60e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"delete",
+						"62a6dc217bd8e6dbc902f60e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/search/ujjain",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"search",
+						"ujjain"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
